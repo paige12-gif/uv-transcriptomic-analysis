@@ -63,13 +63,6 @@ Heatmap & Biological Process Comparison
 
 # Methods
 
-- Python
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
-- GSEAPY (GO enrichment)
-
 Analysis included:
 
 - Differential expression analysis
@@ -77,6 +70,13 @@ Analysis included:
 - GO Biological Process enrichment
 - Representative gene heatmap
 - Biological process comparison (boxplot)
+
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- GSEAPY (GO enrichment)
 
 ---
 
@@ -86,7 +86,7 @@ Analysis included:
 
 ![Volcano Plot](Volcano_plot_final.png)
 
-Differential expression analysis identified genes significantly altered following UV exposure. Genes with |log2FC| ≥ 1 and p < 0.05 were classified as differentially expressed.
+UV exposure induced widespread transcriptomic alterations, with both significantly upregulated and downregulated genes identified under the selected significance thresholds.
 
 ## GO Biological Process Enrichment
 
@@ -94,19 +94,18 @@ Differential expression analysis identified genes significantly altered followin
 
 ![GO Up](GO_upregulated_barplot.png)
 
-GO enrichment analysis identified significant enrichment of metabolic processes, particularly branched-chain amino acid metabolism, among upregulated genes.
 
 ### Downregulated Biological Processes
 
 ![GO Down](GO_downregulated_barplot.png)
 
-Downregulated genes were enriched in biological processes related to cell proliferation, angiogenesis, and regulation of apoptosis, suggesting coordinated suppression of multiple biological programs following UV exposure.
+GO enrichment analysis revealed coordinated changes in biological processes rather than isolated gene-level alterations. Upregulated genes were primarily associated with metabolic pathways, whereas downregulated genes were enriched in biological processes related to proliferation, angiogenesis, and apoptosis.
 
 ## Representative Gene Expression
 
 ![Heatmap](Heatmap_GO_expression.png)
 
-Representative genes from enriched biological processes were visualized to illustrate coordinated expression changes across biological pathways rather than isolated gene-level alterations.
+Representative genes from enriched biological processes displayed consistent expression patterns across functional categories, supporting pathway-level interpretation of UV-induced transcriptomic responses.
 
 ---
 
@@ -125,9 +124,7 @@ Major enriched biological processes included:
 
 ## Systems-Level Interpretation
 
-Rather than examining individual genes alone, this project interpreted transcriptomic responses at the biological process level.
-
-The enrichment results suggest that acute UV exposure induces coordinated changes in metabolism, proliferation, angiogenesis, and apoptosis, indicating system-level transcriptional reprogramming.
+Instead of interpreting transcriptomic responses through individual genes, this analysis examined coordinated changes across biological processes. Integrating differential expression analysis with GO enrichment enabled pathway-level interpretation of UV-induced responses, illustrating how multiple biological functions are collectively reorganized following UV exposure.
 
 ---
 
@@ -149,13 +146,3 @@ Potential future extensions include:
 - Pathway network modeling
 
 ---
-
-# Skills Demonstrated
-
-- RNA-seq data analysis
-- Differential gene expression analysis
-- Gene Ontology enrichment
-- Python data analysis
-- Data visualization
-- Biological interpretation
-- Systems biology thinking
